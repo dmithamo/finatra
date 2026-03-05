@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-bun x sv@0.12.5 create --template minimal --types ts --add prettier eslint vitest="usages:unit,component" --install bun fintrack
+bun x sv@0.12.5 create --template minimal --types ts --add prettier eslint vitest="usages:unit,component" --install bun finatra
 ```
 
 ## Developing
