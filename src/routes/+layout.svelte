@@ -5,6 +5,7 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index';
 	import AppSidebar from '$lib/components/app-sidebar.svelte';
 	import AppThemeToggler from '$lib/components/app-theme-toggler.svelte';
+	import AppLogo from '$lib/components/app-logo.svelte';
 	let { children } = $props();
 </script>
 
@@ -14,11 +15,11 @@
 
 <Sidebar.Provider>
 	<AppSidebar />
-	<main class="h-full w-full">
+	<main class="h-screen w-full">
 		<header class="flex h-16 w-full items-center justify-end gap-4 border-b px-4">
 			<AppThemeToggler />
 		</header>
-		<section class="p-4">
+		<section class="h-full p-4">
 			{@render children()}
 		</section>
 	</main>
